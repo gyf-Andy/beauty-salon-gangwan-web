@@ -1,26 +1,16 @@
-import './assets/main.css'
-
 import { createApp } from 'vue'
+import antdev from "@/plugins/antdev";
+import Antd from 'ant-design-vue';
 import App from './App.vue'
-import { createStore } from 'vuex'
-import "ant-design-vue/dist/reset.css";
-import Antdev from '@/plugins/antdev'
+import 'ant-design-vue/dist/antd.css';
+import {createVueRouter} from "@/router";
+import store from '@/store'
 
-const store = createStore({
-    state () {
-        return {
-            count: 0
-        }
-    },
-    mutations: {
-        increment (state) {
-            state.count++
-        }
-    }
-})
-
-createApp(App)
-    .use(store)
-    .use(Antdev)
-    .mount('#app')
+const router = createVueRouter()
+const instance = createApp(App)
+instance.use(router)
+instance.use(Antd)
+instance.use(antdev)
+instance.use(store)
+instance.mount('#app')
 

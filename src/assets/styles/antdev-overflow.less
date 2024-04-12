@@ -1,0 +1,158 @@
+/** heren web视觉设计规范的ant design组件库 */
+@import './heren-web-ui.less';
+@font-family: @hr-font-family;
+@line-height-base: @hr-line-height-base;
+@grid-columns: 24; //栅格
+@grid-gutter-width: 10px; //gutter的宽
+@border-radius-base: 2px; // 组件/浮层圆角
+@box-shadow-base: 0px 6px 16px 0px rgba(0, 0, 0, 0.2); //浮层，下拉框阴影
+@blue-base: @hr-primary;
+@green-base: @hr-success;
+@gold-base: @hr-warning;
+@error-color: @hr-error;
+@layout-body-background: @hr-background; // 主字号
+@layout-body-padding: 0 10px;
+@divider-color: @hr-divider; //分割线
+@border-color-base: @hr-stroke; //按钮线
+@item-hover-bg: @hr-undercolor; //活动和悬停状态的背景颜色
+// @background-color-base: @hr-undercolor;
+@component-background: @white;
+@text-color: @hr-title;
+
+@primary-color: @hr-primary;
+@info-color: @primary-color;
+@success-color: @hr-success;
+@processing-color: @hr-primary;
+@error-color: @hr-error;
+@highlight-color: @hr-error;
+@warning-color: @hr-warning;
+@white: #ffffff;
+@black: #000000;
+
+// 按钮
+@btn-font-weight: 400;
+// @btn-border-style: inside;
+@btn-primary-color: @white;
+@btn-primary-bg: @hr-primary;
+@btn-danger-bg: @hr-error;
+@btn-danger-border: @hr-error;
+// @btn-default-color: @hr-primary;
+// @btn-default-bg: #fff;
+// @btn-default-border: @hr-primary;
+@btn-disable-color: @hr-auxiliary;
+@btn-disable-bg: @layout-body-background;
+@btn-disable-border: @hr-stroke;
+@btn-height-base: 30px;
+@btn-circle-size: @btn-height-base;
+@btn-square-size: @btn-height-base;
+
+//input框
+@input-height-base: 30px;
+//input框-水平
+@input-padding-horizontal: 10px;
+@input-padding-horizontal-base: @input-padding-horizontal;
+@input-padding-horizontal-lg: @input-padding-horizontal;
+//input框-placeholder
+@input-placeholder-color: @hr-tips;
+@input-color: @hr-title;
+@input-icon-color: @input-color;
+@input-border-color: @border-color-base;
+@input-number-handler-active-bg: @white;
+@input-number-handler-border-color: @border-color-base;
+@input-disabled-bg: @layout-body-background;
+
+// Form
+@label-required-color: @hr-error;
+@form-item-label-height: @input-height-base;
+
+//下拉选择select
+@select-border-color: @border-color-base;
+@select-item-selected-color: #356ae9;
+@select-item-selected-font-weight: 400;
+@select-item-selected-bg: @white;
+@select-item-active-bg: @hr-undercolor;
+@select-dropdown-height: 30px;
+@select-multiple-item-height-lg: 30px;
+@select-multiple-disabled-background: @input-disabled-bg;
+@select-multiple-item-disabled-color: @hr-title;
+@select-multiple-item-disabled-border-color: @select-border-color;
+// 时间选择器
+// ---
+@time-picker-selected-bg: @hr-primary;
+
+// Radio单选
+@radio-size: 20px;
+@radio-top: 0px;
+@radio-border-width: 1px;
+@radio-dot-size: @radio-size - 8px;
+@radio-dot-color: @hr-primary;
+@radio-dot-disabled-color: @layout-body-background;
+@radio-solid-checked-color: @white;
+
+// Checkbox复选框
+@checkbox-size: 20px;
+@checkbox-color: @hr-primary;
+@checkbox-check-color: #fff;
+@checkbox-check-bg: @checkbox-check-color;
+
+// Radio buttons单选按钮
+@radio-button-bg: @white;
+@radio-button-checked-bg: @white;
+@radio-button-color: @hr-title;
+@radio-button-hover-color: @hr-primary;
+@radio-button-active-color: @hr-primary;
+@radio-disabled-button-checked-bg: #bbbbbb;
+@radio-disabled-button-checked-color: @white;
+@radio-wrapper-margin-right: 5px;
+@form-item-trailing-colon: false;
+
+// Switch开关
+// ---
+@switch-height: 24px;
+@switch-sm-height: 18px;
+@switch-sm-checked-margin-left: -(@switch-sm-height - 2px);
+@switch-color: @hr-primary;
+@switch-bg: @white;
+
+// Table
+@table-bg: @white;
+@table-header-bg: #f4f8ff;
+@table-header-color: @hr-auxiliary;
+@table-row-hover-bg: @hr-undercolor;
+@table-selected-row-bg: @hr-undercolor;
+@table-expanded-row-bg: @white;
+@table-padding-vertical: 8px;
+@table-padding-horizontal: 10px;
+
+// Modal模态弹窗
+@modal-body-padding: 20px;
+@modal-header-bg: @hr-table;
+@modal-content-bg: @white;
+@modal-footer-bg: @white;
+
+// Drawer
+@drawer-header-padding: 8px 20px;
+@drawer-body-padding: 20px;
+@drawer-bg: @white;
+
+//Popover
+@popover-bg: @white;
+@popover-color: @hr-title;
+@popover-arrow-outer-color: @popover-bg;
+@popover-distance: 10px;
+
+// Message
+@message-notice-content-bg: @white;
+
+// Notification
+@notification-bg: @white;
+@notification-padding-vertical: 16px;
+@notification-padding-horizontal: 24px;
+
+// Cascader联级
+@cascader-bg: @component-background;
+@cascader-item-selected-bg: @component-background;
+@cascader-menu-bg: @component-background;
+
+// TimePicker
+@time-picker-selected-bg: @hr-undercolor;
